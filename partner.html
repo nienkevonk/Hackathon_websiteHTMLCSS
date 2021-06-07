@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tennis | Homepage</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="hero_image">
+            <h1>Have you got the balls to play tennis?</h1>
+        </div>
+        <nav>
+            <div class="topnav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="uitleg.html">Achtergrondinformatie</a></li>
+                <li><a href="clothes.html">Tenniskleding</a></li>
+                <li><a href="aandeslag.html">Zelf aan de slag!</a></li>
+                <li class="active"><a href="partner.html">Vind je partner</a></li>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="slogan">Teamwork <br>
+            makes the dream work</h2>
+        <div>
+            <p>
+                Wil jij graag beginnen met tennis of een toernooitje spelen met een partner, maar weet je niet waar je
+                deze persoon kan vinden? <br>
+                Vul onderstaand formulier in voor een match verzoek!
+            </p> <br>
+        </div>
+        <form name="contact" method="POST" data-netlify="true">
+            <h3>Vraag een match aan</h3><br>
+            <div class="question">
+                <label for="name">Naam: </label><br>
+                <input type="text" name="name" id="name" required />
+            </div>
+            <div class="question">
+                <label for="place">Woonplaats: </label><br>
+                <input type="text" name="place" id="place" required />
+            </div>
+            <div class="question">
+                <label for="email">E-mail: </label><br>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <div class="question">
+                <label for="age">Leeftijd: </label><br>
+                <input type="number" name="age" id="age" required />
+            </div>
+            <div class="question">
+                <label for="singlerating"> Rating enkel: </label><br>
+                <input type="number" name="singlerating" id="singlerating" min="1" max="10" required />
+            </div>
+            <div class="question">
+                <label for="doublesrating">Rating dubbel: </label><br>
+                <input type="number" name="doublesrating" id="doublesrating" min="1" max="10" required />
+            </div>
+            <div class="question">
+                <for label="gender">Geslacht:</for><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Man</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Vrouw</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Anders</label>
+            </div>
+            <div class="question">
+                <label for="vereniging">Bij welke vereniging ben je lid?</label><br>
+                <textarea id="vereniging" name="vereniging" required></textarea>
+            </div>
+            <input type="submit" value="Versturen" name="submit">
+        </form>
+
+    </main>
+
+    <footer>
+        <span class="footertext">
+            <p>© Nienke Vonk @2021</p>
+        </span>
+    </footer>
+</body>
+
+</html>

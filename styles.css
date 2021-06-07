@@ -1,0 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+    }
+    
+    
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+background-color:rgb(128, 150, 172);
+}
+
+main{
+    margin:10px;
+}
+
+header{
+    margin:10px;
+}
+
+.topnav{
+    margin:10px 0px 10px 0px;
+    border: 1px rgb(191, 219, 30) solid; 
+}
+
+.topnav li{
+    background-color:#333;
+    list-style-type: none;
+    margin:0;
+    padding: 5px 0px 5px 10px;
+    text-decoration:none;
+    text-align:center;
+    border-top:1px grey solid;
+}
+
+.topnav a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.topnav li a {
+    display:block;
+}
+
+.topnav li:hover{
+    background-color:darkgrey;
+    color:black;
+}
+
+.topnav .active{
+    background-color:rgb(191, 219, 30);
+}
+
+.hero_image{
+background-image: url("img/headerpicture.jpg"); 
+background-color: #cccccc; 
+height: 250px; 
+background-position: center; 
+background-repeat: no-repeat; 
+background-size: cover;
+position:relative;
+border:2px rgb(191, 219, 30) solid;
+}
+
+h1{
+    margin-top: 10px;
+    position:absolute;
+    margin-bottom: 5px;
+    text-align:center;
+    color:yellow;
+    font-size:23px;
+    padding:10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    bottom: -6px;
+}
+
+.explanation h2, .clothes h2, .diy h2, .partner h2{
+    color:white;
+    background-color:black;
+    font-size:18px;
+    text-align:center;
+    text-decoration: underline;
+    border-radius:10px;
+}
+
+.explanation, .clothes, .diy, .partner{
+    font-size:14px;
+    padding:30px;
+    margin-top:15px;
+    border: 4px solid rgb(191, 219, 30);
+    border-radius:20px;
+    text-align:center;
+}
+
+.explanation{
+    background-image: url("img/field.jpg"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position:relative;
+}
+
+.clothes{
+    background-image: url("img/clothes.jpg"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position:relative;
+}
+
+.diy{
+    background-image: url("img/rackets.jpg"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position:relative;
+}
+
+.partner{
+    background-image: url("img/tennishighfive.jpg"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position:relative;
+}
+
+.tennisscore{
+display:flex;
+justify-content: center;
+}
+
+a:visited {
+    color: white;
+  }
+
+.slogan{
+    font-size:14px;
+    text-align:center;
+    font-style: italic;
+    margin: 20px;
+}
+
+.footertext{
+    font-size: 8px;
+    text-align:center;
+    margin: 20px;
+}
+
+footer{
+    width:100%;
+    background:rgb(4, 135, 145);
+    margin: 10px 0px 0px 0px;
+    padding: 0;
+}
+
+form{
+    padding:5px;
+    border:2px solid rgb(191, 219, 30);
+    margin: 2px;
+}
+
+h3{
+    text-align:center;
+    text-decoration:underline;
+    margin: 10px;
+}
+
+.question{
+    margin: 5px;
+}
+input[type="radio"]{
+    margin-left:5px;
+    margin-right:3px;
+}
+
+input[type="submit"]{
+    background-color:rgb(191, 219, 30);
+    color:white;
+    border:none;
+    font-style:bold;
+    height:25px;
+    width:70%;
+    cursor:pointer;
+    margin-left:7px;
+    font-weight:bold;
+}
+
+input, textarea{
+    margin:10px 10px 10px 0px;
+    padding:8px;
+    border-radius:5px;
+}
+
+textarea{
+    resize:none;
+}
+
+.ladyclothes, .menclothes{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+    margin-top:10px;
+    width: 60%;
+}
+
+.heren{
+    clear:right;
+}
+
+.shoplist li{
+margin:15px;
+}
+
+a:link{
+    color:white;
+}
+
+.tournaments, .vereniging{
+    margin:20px;
+    padding:10px;
+    border:2px solid rgb(191, 219, 30);
+    border-radius:20px;
+    background-color:rgb(191,219,30);
+}
+
+.texttournament, .textvereniging{
+    margin-bottom:20px;
+}
+
+@media screen and (min-width: 600px){
+    p, ul{
+        text-align:center;
+        list-style-type:none;
+    }
+
+    h1{
+ margin-left:auto;
+ margin-right:auto;
+ width:100%;
+    }
+
+.explanation, .clothes, .diy, .partner{
+    height: 20vh;
+    width: 30%;
+    display:inline-block;
+    }
+
+.blockofcontent{
+text-align:center;
+}
+input[type="submit"]{
+width:10%;
+}
+.tournaments, .vereniging{
+    margin:40%;
+}
+}
